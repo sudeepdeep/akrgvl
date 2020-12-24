@@ -10,7 +10,7 @@ def home():
 def c():
 	return render_template('c.html')
 
-@app.route('/c++')
+@app.route('/c1')
 def c1():
 	return render_template('c++.html')
 
@@ -26,9 +26,19 @@ def java():
 def htm():
 	return render_template('htm.html')
 
+@app.route('/ml')
+def ml():
+	return render_template('ml.html')
+@app.route('/rp')
+def rp():
+	return render_template('rp.html')
+
+@app.route('/nix')
+def nix():
+	return render_template('nx.html')
 @app.route('/sql')
 def sql():
 	return render_template('sql.html')
 
 if __name__ == "__main__":
-	app.run(debug = False)
+	app.run(debug = True)
