@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+<style type="text/css">
+	body{
+		background-color: #634975;
+	}
+	.logo img{
+		width:80%;
+		height:120px;
+	}
+
+ .heading{
+		font-family: cursive;
+		 background-color: #9452A5;
+		  color:white;
+		   height: 90px;
+		    text-align: center;
+		    
+	}
+
+	
+
+@media screen and (max-width: 1060px) {
+.logo img{
+	width: 80%;
+	height: 120px;
+
+}
+.heading{
+	color:white;
+	height: 120px;
+}
+}
+@media screen and (max-width: 768px) {
+	.logo img{
+	width: 80%;
+	height: 120px;
+
+}
+.heading{
+	color:white;
+	height: 120px;
+}
+}
+@media screen and (max-width: 668px) {
+	.logo img{
+	width: 80%;
+	height: 120px;
+
+}
+ .heading{
+	color:white;
+	height: 120px;
+}
+}
+@media screen and (max-width: 568px) {
+	.logo img{
+	width: 90%;
+	height: 100px;
+	margin-left:-80px; 
+
+}
+.heading{
+	width:100%;
+	height: 100px;
+}
+.heading h1{
+	color:white;
+	font-size: 25px;
+	text-align: center;
+
+}
+}
+@media screen and (max-width: 548px) {
+	.logo img{
+	width: 90%;
+	height: 100px;
+	margin-left:-80px; 
+
+}
+.heading{
+	width:auto;
+	height: 100px;
+}
+.heading h1{
+	color:white;
+	font-size: 25px;
+	padding-top: 10px;
+	float: left;
+	padding-left: 30px;
+	text-align: center;
+}
+.heading1 h1{
+	width: 30%;
+	
+}
+.image2 img{
+	
+
+	width: 180px;
+	height: 300px;
+}
+}
+
+
+
+</style>
+<body>
+<table width="100%">
+	<tr>
+		<td colspan  = "2" align="center">
+			<div class = "logo">
+			<img src = "{{url_for('static',filename = 'images/unnamed.png')}}"></div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan  = "2">
+			<div class = "heading">
+			<h1>Welcome to the Virtual lab of <br>AKRG CET</h1></div>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%" height="50px;">
+		</td>
+		<td  align="center" width="50%">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width = "40%">
+			<div class = "heading1">
+			<h1 style="font-family:cursive; color:white;">Here you can perform your Lab Works from Home!!</h1>
+			<h1 style="font-family: cursive;color:white;">We are providing different compilers to work 
+				on your lab assignments and to finish your programs</h1></div>
+		</td>
+
+		<td align="center" width="60%">
+			<div class = "image2">
+			<img src = "{{url_for('static',filename = 'images/student.jpg')}}" width="100%" height="400px;"></div>
+		</td>
+
+	</tr>
+
+	<tr>
+		<td colspan="2" align="center">
+			<h1 style="font-family:candara; color:white;">Available Compilers</h1>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="center" width="50%">
+			<a href = "/c" ><img src = "{{url_for('static',filename = 'images/cc.png')}}" height="200px" width="200px;"></a>
+		</td>
+		<td  align="center" width="50%">
+			<a href = "/c++"><img src = "{{url_for('static',filename = 'images/c+++.png')}}" height="180px" width="180px;" ></a>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%" height="100px;">
+		</td>
+		<td  align="center" width="50%">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%">
+			<a href = "/python"><img src = "{{url_for('static',filename = 'images/python.png')}}" height="180px" width="200px;"></a>
+		</td>
+		<td  align="center" width="50%">
+			<a href = "/java"><img src = "{{url_for('static',filename = 'images/java1.png')}}" height="180px" width="180px;" ></a>
+		</td>
+	</tr>
+<tr>
+		<td align="center" width="50%" height="100px;">
+		</td>
+		<td  align="center" width="50%">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%">
+			<a href = "/htm"><img src = "{{url_for('static',filename = 'images/html.png')}}" height="180px" width="200px;"></a>
+		</td>
+		<td  align="center" width="50%">
+			<a href = "/sql"><img src = "{{url_for('static',filename = 'images/sql2.png')}}" height="350px" width="350px;" ></a>
+		</td>
+	</tr>
+<tr>
+		<td align="center" width="50%" height="100px;">
+		</td>
+		<td  align="center" width="50%">
+		</td>
+	</tr>
+</table>
+<label style="font-size: 50px; font-family: candara; color: white;">Sincere thanks to </label>
+<marquee >
+	<a href = "https://kvrsoftwares.blogspot.com/p/menu.html" target="_blank"><img src = "{{url_for('static',filename = 'images/kvr.jpg')}}" width="300px" height="250px;"></a>
+	<a href = "https://www.programiz.com/" target="_blank"><img src = "{{url_for('static',filename = 'images/pz.png')}}" width="300px" height="250px;"></a>
+	<a href = "https://www.javatpoint.com/" target="_blank"><img src = "{{url_for('static',filename = 'images/javatpoint.png')}}" width="300px" height="250px;"></a>
+	<a href = "https://www.onlinegdb.com/" target="_blank"><img src = "{{url_for('static',filename = 'images/online.png')}}" width="300px" height="250px;"></a>
+	<a href = "https://paiza.io/en" target="_blank"><img src = "{{url_for('static',filename = 'images/paiza.png')}}" width="300px" height="250px;"></a>
+</marquee>
+</body>
+</html>
