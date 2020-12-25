@@ -22,6 +22,13 @@ def python():
 def java():
 	return render_template('java.html')
 
+@app.route('/ds')
+def ds():
+	return render_template('ds.html')
+@app.route('/ads')
+def ads():
+	return render_template('ads.html')
+
 @app.route('/htm')
 def htm():
 	return render_template('htm.html')
@@ -40,5 +47,11 @@ def nix():
 def sql():
 	return render_template('sql.html')
 
+@app.route('/submit',methods = ['GET','POST'])
+def submit():
+	if request.method == 'POST':
+		return render_template('home.html')
+
+		
 if __name__ == "__main__":
-	app.run(debug = True)
+	app.run(debug = False)
