@@ -5,7 +5,7 @@
 </head>
 <style type="text/css">
 	body{
-		background-color: #1E90FF;
+		background-color: white;
 	}
 	.logo img{
 		width:80%;
@@ -14,10 +14,10 @@
 
  .heading{
 		font-family: cursive;
-		 background-color: #0A1857;
+		background-color: #031458;
 		  color:white;
 		   height: 90px;
-		    text-align: center;
+		   
 		    
 	}
 
@@ -35,18 +35,37 @@
 }
 }
 @media screen and (max-width: 1018px) {
-.logo img{
+	.logo img{
 	width: 80%;
 	height: 120px;
 
 }
 .heading{
 	color:white;
-	height: 120px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 10px;
+	
+	
+}
+
+.heading1 h1{
+	width: 100%;
+	height: 100%;
+	font-size: 28px;
+	
+}
+.image2 img{
+	
+
+	width: 100%;
+	height: 100%;
+}
+
+marquee img{
+	height: 200px;
+	width: 200px;
 }
 }
+
 @media screen and (max-width: 768px) {
 	.logo img{
 	width: 80%;
@@ -56,8 +75,25 @@
 .heading{
 	color:white;
 	height: 120px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	
+}
+
+.heading1 h1{
+	width: 100%;
+	height: 100%;
+	font-size: 25px;
+	
+}
+.image2 img{
+	
+
+	width: 100%;
+	height: 100%;
+}
+
+marquee img{
+	height: 160px;
+	width: 160px;
 }
 }
 @media screen and (max-width: 668px) {
@@ -71,12 +107,30 @@
 	height: 120px;
 	text-align: center;
 }
+
+.heading1 h1{
+	width: 100%;
+	height: 100%;
+	font-size: 23px;
+	
+}
+.image2 img{
+	
+
+	width: 100%;
+	height: 100%;
+}
+
+marquee img{
+	height: 140px;
+	width: 140px;
+}
 }
 @media screen and (max-width: 568px) {
 	.logo img{
 	width: 90%;
 	height: 100px;
-	margin-left:-80px; 
+	margin-left:0px; 
 
 }
 .heading{
@@ -85,40 +139,66 @@
 }
 .heading h1{
 	color:white;
-	font-size: 25px;
+	font-size: 25px;	
 	text-align: center;
 
-}
-}
-@media screen and (max-width: 548px) {
-	.logo img{
-	width: 90%;
-	height: 100px;
-	margin-left:-80px; 
-
-}
-.heading{
-	width:auto;
-	height: 100px;
-}
-.heading h1{
-	color:white;
-	font-size: 25px;
-	
-	float: left;
-	padding-left: 30px;
-	text-align: center;
 }
 .heading1 h1{
-	width: 30%;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
 	
 }
 .image2 img{
 	
 
-	width: 180px;
-	height: 300px;
+	width: 100%;
+	height: 100%;
 }
+
+
+marquee img{
+	height: 120px;
+	width: 120px;
+}
+}
+@media screen and (max-width: 548px) {
+	.logo img{
+		width: 80%
+		height: 100px;
+	margin-left:0px; 
+
+}
+.heading{
+	width:auto;
+	height:100px;
+	
+}
+.heading h1{
+	color:white;
+
+
+	padding-left: 30px;
+	
+}
+.heading1 h1{
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	
+}
+.image2 img{
+	
+
+	width: 100%;
+	height: 100%;
+}
+
+marquee img{
+	height: 100px;
+	width: 100px;
+}	
+
 }
 
 
@@ -127,13 +207,13 @@
 <body>
 <table width="100%">
 	<tr>
-		<td colspan  = "2" align="center">
+		<td colspan  = "2" align="center" width="100%">
 			<div class = "logo">
 			<img src = "{{url_for('static',filename = 'images/unnamed.png')}}"></div>
 		</td>
 	</tr>
 	<tr>
-		<td colspan  = "2">
+		<td colspan  = "2" align="center" width="100%">
 			<div class = "heading">
 			<h1>Welcome to the Virtual lab of <br>AKRG CET</h1></div>
 		</td>
@@ -147,30 +227,32 @@
 	<tr>
 		<td align="center" width = "40%">
 			<div class = "heading1">
-			<h1 style="font-family:cursive; color:white;">Here you can perform your Lab Works from Home!!</h1>
-			<h1 style="font-family: cursive;color:white;">We are providing different compilers to work 
+			<h1 style="font-family:cursive; color:black;">Here you can perform your Lab Works from Home!!
+			We are providing different compilers to work 
 				on your lab assignments and to finish your programs</h1></div>
 		</td>
 
 		<td align="center" width="60%">
 			<div class = "image2">
-			<img src = "{{url_for('static',filename = 'images/student.jpg')}}" width="100%" height="400px;"></div>
+			<img src = "{{url_for('static',filename = 'images/student.jpg')}}" width="60%"></div>
 		</td>
 
 	</tr>
 
 	<tr>
 		<td colspan="2" align="center">
-			<h1 style="font-family:candara; color:white;">Available Compilers</h1>
+			<h1 style="font-family:candara; color:#031458;">Available Compilers</h1>
 		</td>
 	</tr>
 	
 	<tr>
+		<div class = "inside">
 		<td align="center" width="50%">
-			<a href = "/c" ><img src = "{{url_for('static',filename = 'images/cc.png')}}" height="200px" width="200px;"></a>
+			<a href = "/c" ><img src = "{{url_for('static',filename = 'images/cc.png')}}" 	width="30%;"></a>
+
 		</td>
 		<td  align="center" width="50%">
-			<a href = "/c1"><img src = "{{url_for('static',filename = 'images/c+++.png')}}" height="180px" width="180px;" ></a>
+			<a href = "/c1"><img src = "{{url_for('static',filename = 'images/c+++.png')}}" width="25%;" ></a>
 			
 		</td>
 	</tr>
@@ -182,10 +264,10 @@
 	</tr>
 	<tr>
 		<td align="center" width="50%">
-			<a href = "/python"><img src = "{{url_for('static',filename = 'images/python.png')}}" height="180px" width="200px;"></a>
+			<a href = "/python"><img src = "{{url_for('static',filename = 'images/python.png')}}"  width="30%;"></a>
 		</td>
 		<td  align="center" width="50%">
-			<a href = "/java"><img src = "{{url_for('static',filename = 'images/java1.png')}}" height="180px" width="180px;" ></a>
+			<a href = "/java"><img src = "{{url_for('static',filename = 'images/java1.png')}}" width="30%;" ></a>
 		</td>
 	</tr>
 <tr>
@@ -196,10 +278,10 @@
 	</tr>
 	<tr>
 		<td align="center" width="50%">
-			<a href = "/ds"><img src = "{{url_for('static',filename = 'images/ds.png')}}" height="250px" width="250px;"></a>
+			<a href = "/ds"><img src = "{{url_for('static',filename = 'images/ds.png')}}"  width="40%"></a>
 		</td>
 		<td  align="center" width="50%">
-			<a href = "/ads"><img src = "{{url_for('static',filename = 'images/ads.png')}}" height="200px" width="200px;" ></a>
+			<a href = "/ads"><img src = "{{url_for('static',filename = 'images/ads.png')}}" width="30%;" ></a>
 		</td>
 	</tr>
 	<tr>
@@ -210,10 +292,10 @@
 	</tr>
 	<tr>
 		<td align="center" width="50%">
-			<a href = "/htm"><img src = "{{url_for('static',filename = 'images/html.png')}}" height="180px" width="200px;"></a>
+			<a href = "/htm"><img src = "{{url_for('static',filename = 'images/html.png')}}"  width="30%;"></a>
 		</td>
 		<td  align="center" width="50%">
-			<a href = "/sql"><img src = "{{url_for('static',filename = 'images/sql2.png')}}" height="350px" width="350px;" ></a>
+			<a href = "/sql"><img src = "{{url_for('static',filename = 'images/sql2.png')}}" width="30%;" ></a>
 		</td>
 	</tr>
 <tr>
@@ -224,10 +306,10 @@
 	</tr>
 	<tr>
 		<td align="center" width="50%">
-			<a href = "/ml"><img src = "{{url_for('static',filename = 'images/ml.png')}}" height="180px" width="200px;"></a>
+			<a href = "/ml"><img src = "{{url_for('static',filename = 'images/ml.png')}}"  width="30%;"></a>
 		</td>
 		<td  align="center" width="50%">
-			<a href = "/rp"><img src = "{{url_for('static',filename = 'images/rp.png')}}" height="180px" width="180px;" ></a>
+			<a href = "/rp"><img src = "{{url_for('static',filename = 'images/rp.png')}}"  width="30%;" ></a>
 		</td>
 	</tr>
 	<tr>
@@ -238,7 +320,7 @@
 	</tr>
 	<tr>
 		<td align="center" width="50%">
-			<a href = "/nix"><img src = "{{url_for('static',filename = 'images/nix.png')}}" height="130px" width="180px;"></a>
+			<a href = "/nix"><img src = "{{url_for('static',filename = 'images/nix.png')}}" width="30%;"></a>
 		</td>
 		<td  align="center" width="50%">
 			<a href = "#"></a>
@@ -249,20 +331,24 @@
 		</td>
 		<td  align="center" width="50%">
 		</td>
-	</tr>
-</table>
-<center>
-<h2>To Submit your assingment <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=akrgdob@gmail.com" target="_blank" style="color: white;text-decoration: none;">Please Click Here</a></h2></center>
+	</tr></div>
 
+<tr><td colspan="2" width="100%" align="center">
+<h2 style="font-size: 20px;">To Submit your assingment Please <a href = " https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZXhcwTsHSHBNMPhzvKghKlClmNMTQLBzJmXKXzmRqQWBkQkGWfGllLgtgchSDPXPwDhXV" target="_blank">Click Here</a></h2></td></tr>
 
-<label style="font-size: 50px; font-family: candara; color: white;">Sincere thanks to </label>
+<tr><td colspan="2" width="100%" >
+
+<label style="font-size: 20px; font-family: candara; color: black;">Sincere thanks to </label></td></tr>
+<tr><td colspan="2" width="100%">
 <marquee >
-	
-	<a href = "https://www.programiz.com/" target="_blank"><img src = "{{url_for('static',filename = 'images/pz.png')}}" width="300px" height="250px;"></a>
+
+	<a href = "https://www.programiz.com/" target="_blank"><img src = "{{url_for('static',filename = 'images/pz.png')}}"></a>
 	<a href = "https://www.javatpoint.com/" target="_blank"><img src = "{{url_for('static',filename = 'images/javatpoint.png')}}" width="300px" height="250px;"></a>
 	<a href = "https://www.onlinegdb.com/" target="_blank"><img src = "{{url_for('static',filename = 'images/online.png')}}" width="300px" height="250px;"></a>
 	<a href = "https://paiza.io/en" target="_blank"><img src = "{{url_for('static',filename = 'images/paiza.png')}}" width="300px" height="250px;"></a>
-</marquee>
-<footer style="width: auto; height: 50px; text-align: center; color: white;font-family: candara;font-size: 20px;background-color: #031458; padding-top: 25px;">©CopyRight By CSE Students(2k17 - 2021)</footer>
+</marquee></td></tr>
+<tr><td colspan="2" width="100%" align="center">
+<footer style=" color: white;font-family: candara;font-size: 20px;background-color: #031458; padding-top: 20px; padding-bottom: 20px;">©CopyRight By CSE Students(2k17 - 2021)</footer></td></tr>
+</table>
 </body>
 </html>
